@@ -7,10 +7,10 @@ export const Navigation = () => {
         <h1 className="font-bold">Constructor</h1>
         <ul className="lg:flex gap-4 font-normal ml-6 hidden">
             {navItems.map((item)=>(
-                <li className="text-[#6B7A99] font-bold text-sm" key={item.id}>{item.name}</li>
+                <li className="text-[#6B7A99] font-semibold text-xs" key={item.id}>{item.name}</li>
             ))}
         </ul>
-        <PiDotsThree />
+        <PiDotsThree className="hidden lg:block"/>
     </div>
   )
 }

@@ -9,6 +9,7 @@ import seven from './7.png'
 import eight from './8.png'
 import nine from './9.png'
 import ten from './10.png'
+import card2 from './card2.png'
 
 
 export {
@@ -23,4 +24,5 @@ export {
     eight,
     nine,
     ten,
+    card2,
 }

@@ -1,6 +1,6 @@
 import { PiDotsThree } from "react-icons/pi";
 import { LuArrowRight } from "react-icons/lu";
-import { debitcard } from "../assets";
+import { card2, debitcard } from "../assets";
 
 const AccountCard = () => {
   return (
@@ -13,7 +13,7 @@ const AccountCard = () => {
       {
         card.map((item)=>(
         <div className="flex justify-between pt-2 items-center" key={item.id}>
-        <img src={debitcard} alt="" className="w-10" />
+        <img src={item.img} alt="" className="w-10" />
         <div>
           <p className="text-xs font-semibold">{item.type}</p>
           <p className="text-xs font-semibold">{item.price} $</p>
@@ -42,7 +42,7 @@ const card = [
         id:2,
         type:'Master Card',
         price:"2,456",
-        img:debitcard
+        img:card2,
     },
     {
         id:3,

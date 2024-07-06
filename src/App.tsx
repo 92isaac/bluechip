@@ -62,7 +62,7 @@ function App() {
                 {chosenPeople.map((people) => (
                   <div
                     key={people.id}
-                    className="flex gap-5 justify-between lg:justify-start font-semibold py-1 px-6 text-sm items-center"
+                    className="flex gap-5 justify-between lg:justify-start font-semibold py-1 px-6 text-xs items-center"
                   >
                     <img
                       src={people.img}
@@ -87,7 +87,7 @@ function App() {
                 {chosenPeople.map((people) => (
                   <div
                     key={people.id}
-                    className="flex gap-5 justify-between lg:justify-start font-semibold py-1 px-6 text-sm items-center"
+                    className="flex gap-5 justify-between text-xs lg:justify-start font-semibold py-1 px-6 items-center"
                   >
                     <img
                       src={people.img}

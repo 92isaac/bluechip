@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 import Select from "react-select";
-import { debitcard } from "../assets";
+import { card2, debitcard } from "../assets";
 import { PiDotsThree } from "react-icons/pi";
 import { IoIosSwap } from "react-icons/io";
 
@@ -38,7 +38,7 @@ const SendMoney = () => {
     {
       id: 2,
       text: "5677 0571",
-      img: debitcard,
+      img: card2,
     },
     {
       id: 3,
@@ -87,8 +87,8 @@ const SendMoney = () => {
         className="w-full rounded-b-lg text-[#6B7A99] "
         onValueChange={handleTabChange}
       >
-        <TabsList className="flex w-full justify-between items-center px-4 border-b-2 pt-3">
-          <div className="bg-white w-5 h-5 my-auto rounded-full flex border flex-col">
+        <TabsList className="flex w-full justify-between items-center px-4 border-b-2 pt-4">
+          <div className="bg-white w-6 h-6 my-auto rounded-full flex border flex-col">
             <IoIosSwap className="m-auto text-[#8833ff] rounded-full " />
           </div>
           <TabsTrigger
@@ -111,7 +111,7 @@ const SendMoney = () => {
           >
             Receipts to the account
           </TabsTrigger>
-          <div className="bg-white w-5 h-5 my-auto rounded-full flex border flex-col">
+          <div className="bg-white w-6 h-6 my-auto rounded-full flex border flex-col">
             <PiDotsThree className="m-auto text- rounded-full " />
           </div>
         </TabsList>
@@ -128,7 +128,7 @@ const SendMoney = () => {
           <Select
             className="select-container border-2 rounded mx-4 my-4"
             classNamePrefix="select-category"
-            defaultValue={ToBankCard[0]}
+            defaultValue={ToBankCard[1]}
             name="category"
             options={ToBankCard}
             styles={customStyles}
