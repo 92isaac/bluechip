@@ -54,7 +54,7 @@ function App() {
               <CardFeatures
                 label="Chosen people"
                 icons={
-                  <div className="bg-white w-5 h-5 my-auto rounded-full flex border flex-col">
+                  <div className="bg-white w-8 h-8 my-auto rounded-full flex border flex-col">
                     <PiDotsThree className="m-auto text- rounded-full " />
                   </div>
                 }
@@ -79,7 +79,7 @@ function App() {
               <CardFeatures
                 label="Favourite companies"
                 icons={
-                  <div className="bg-white w-5 h-5 my-auto rounded-full flex border flex-col">
+                  <div className="bg-white w-8 h-8 my-auto rounded-full flex border flex-col">
                     <PiDotsThree className="m-auto text- rounded-full " />
                   </div>
                 }

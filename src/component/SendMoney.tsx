@@ -88,12 +88,12 @@ const SendMoney = () => {
         onValueChange={handleTabChange}
       >
         <TabsList className="flex w-full justify-between items-center px-4 border-b-2 pt-4">
-          <div className="bg-white w-6 h-6 my-auto rounded-full flex border flex-col">
+          <div className="bg-white w-8 h-8 my-auto rounded-full flex border flex-col">
             <IoIosSwap className="m-auto text-[#8833ff] rounded-full " />
           </div>
           <TabsTrigger
             value="Card-2-Card"
-            className={`px-4 py-2 text-xs font-bold  ${
+            className={`px-4 py-3 text-xs font-bold  ${
               activeTab === "Card-2-Card"
                 ? "border-b-2 text-[#8833ff] border-[#8833ff] font-bold"
                 : ""
@@ -103,7 +103,7 @@ const SendMoney = () => {
           </TabsTrigger>
           <TabsTrigger
             value="account"
-            className={`px-4 py-2 text-xs font-bold ${
+            className={`px-4 py-3 text-xs font-bold ${
               activeTab === "account"
                 ? "border-b-2 text-[#8833ff] border-[#8833ff] font-bold"
                 : ""
@@ -111,7 +111,7 @@ const SendMoney = () => {
           >
             Receipts to the account
           </TabsTrigger>
-          <div className="bg-white w-6 h-6 my-auto rounded-full flex border flex-col">
+          <div className="bg-white w-8 h-8 my-auto rounded-full flex border flex-col">
             <PiDotsThree className="m-auto text- rounded-full " />
           </div>
         </TabsList>
